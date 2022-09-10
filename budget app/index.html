@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 1 awsomefonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+     Our Expense Tracker
+    </div>
+ <div class="main">
+  <div class="container">
+    <div class="topbar">
+         <p class="text" >Your Current Balance</p>
+         <p class="amount_holder">
+             <span id="currency">$</span>
+             <span id="balance">500</span>
+         </p>
+    </div>
+    <div class="form">
+        <p>Add Transaction</p>
+        <div class="form">
+            <div class="form-control">
+                <label for="name">NAME</label>
+                  <input type="text" name="name" id="name" placeholder="my salary">  
+            </div>
+           <div class="form-control">
+            <label for="name">Type</label>
+            <div class="radio">
+                <input type="radio" name="type" id="income"  placeholder="my salary">
+                <label for="radio">income</label>
+            </div>
+            <div class="radio">
+                <input type="radio" name="type" id="expense">
+                <label for="radio">Expense</label>
+            </div>
+           </div>
+        </div>
+        <div class="form-control">
+            <label for="amount">amount</label>
+            <input type="number" name="amount" id="amount" placeholder="e.g 400">
+        </div>
+        <button class="btn"
+        id="save">Save Transaction</button>
+    </div>
+    <p class="header">Transaction list:</p>
+   <ul id="list_of_Transaction">
+   
+    <li class="transaction income">
+         <p>income 1</p>
+        <div class="right_side">
+            <p>$300</p>
+            <button><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+            <button><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+        </div>
+    </li>
+
+    <li class="transaction expense">
+        <p>expense 1</p>
+        <div class="right_side">
+            <p>$100</p>
+            <button><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+            <button><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+        </div>
+    </li>
+
+   </ul>
+  </div>
+ </div>
+
+
+
+  <div class="footer">
+    Made By Frank
+  </div>
+
+<!-- 8 awsomefont -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/v4-shims.min.css" integrity="sha512-ARfx5eajdcCAuWvuJrgUuJ6D25ON3KZRTCghNXXKeJldCQJ5bXS+6CvG2EhcFWITF95uwZydzpufSKvhmSpTxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
+</body>
+</html>

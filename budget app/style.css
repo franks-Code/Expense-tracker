@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header,.footer{
+    background-color: #1abd72;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.header{
+    font-size: 2rem;
+}
+.main{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.topbar{
+    background-color: #1abd72 ;
+    color: white;
+    padding: 20px;
+    min-width: 300px;
+}
+.text{
+    color: #eee;
+    font-size: 0.8rem;
+    margin-bottom: 2px;
+}
+.amount_holder{
+    font-size: 2rem;
+}
+.form{
+    background-color: #ccc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form p{
+    font-size: 1.4rem;
+  
+}
+label,input{
+    display: block;
+  
+}
+input{
+    padding: 5px 10px;
+}
+.form-control{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.radio{
+    display: flex;
+    align-items: center;
+}
+button{
+    outline: none;
+    border: none;
+    background: none;
+}
+.btn:hover{
+    background-color: rgb(49, 121, 87);
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    background-color: #1abd72;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 10px;
+}
+p.header{
+    margin: 10px 0;
+}
+ul{
+    list-style: none;
+}
+.transaction{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: white;
+    margin: 5px 0;
+}
+.income{
+    background-color: #1abd72;
+}
+.expense{
+    background-color: #e5415e;
+}
+.right_side{
+    display: flex;
+    gap: 5px;
+}
+.right_side button{
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease-out;
+}
+.right_side button :hover{
+    color: skyblue;
+}
